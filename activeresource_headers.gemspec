@@ -17,12 +17,10 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  rails_version = "~> 3.2"
+  gem.add_dependency  'activeresource'
 
-  gem.add_dependency  'activeresource', rails_version
-
-  gem.add_development_dependency 'rspec',             '~> 2.11'
+  gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'fakeweb'
-  gem.add_development_dependency 'activesupport',     rails_version
+  gem.add_development_dependency 'activesupport'
 
 end
